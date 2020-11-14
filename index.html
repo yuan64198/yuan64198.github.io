@@ -9,6 +9,8 @@
 		<title>Chih-Yuan Huang Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  		<link rel="stylesheet" href="assets/css/style.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
@@ -17,9 +19,7 @@
 			<header id="header">
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/myPhoto.jpg" alt="" /></a>
-					<h1><strong>I am Chih-Yuan Huang (黃智淵)</strong><br />Baseball athlete and program developer<br />
-					Please check out my recent projects<br />
-					Any feedback would be highly appreciated<br />
+					<h1><strong>Chih-Yuan Huang (黃智淵)</strong><br />
 					<br><i>"There are 10 kinds of people in the world, those who can read BINARY and those who cannot."</i></br>
 				</div>
 			</header>
@@ -28,16 +28,124 @@
 			<div id="main">
 
 				<!-- One -->
-					<!-- <section id="one">
-						<header class="major">
-							<h2>Ipsum lorem dolor aliquam ante commodo<br />
-							magna sed accumsan arcu neque.</h2>
-						</header>
-						<p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
-						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
+				<section id="one">
+					<header class="major">
+						<h2>Hello, I am Chih-Yuan Huang</h2>
+					</header>
+					<h4>Baseball athlete and program developer</h4>
+						
+					<h4>Currently studying master's degree in Computer Science at Texas A&M University</h4>
+						
+					<h4>Actively seeking full-time software engineer job opportunities</h4>
+
+					<h4>Please check on my <a href="#two">recent projects</a> down below, any feedback would be highly appreciated!</h4>
+
+					<div class="inner">
+						<ul class="icons">
+							
+							<li><a href="https://github.com/yuan64198" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/chih-yuan-huang/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:yuan64198@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://twitter.com/yuan64198" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 						</ul>
-					</section> -->
+					</div>
+				</section>
+
+
+
+
+
+
+				<!-- One Point Five -->
+				<section id="one_point_five">
+					<h2>Experience Timeline</h2>
+					<style>
+						#more {display: none;}
+					</style>
+					<div class="container">
+	
+						<div class="timeline-item" date-is='08-26-2019'>
+							<h2 style="line-height: 100%;">Study master's degree at Texas A&M University</h2>
+							<ul style="line-height: 150%;">
+								<li>Current GPA:4.0/4.0</li>
+								<li>Granted$11,000 of scholarship and tuition fee waiver from Department of Computer Science for good academic standing</li>
+							</ul>
+						</div>
+
+						<span id="dots"></span>
+						
+						<span id="more">
+
+						<div class="timeline-item" date-is='03-15-2019'>
+							<h2 style="line-height: 100%;">Served in the National Army</h2>
+							<ul style="line-height: 150%;">
+								<li>Had four months of obligatory military training in R.O.C military base at Yilan City.</li>
+							</ul>
+						</div>
+						
+						<div class="timeline-item" date-is='02-01-2018'>
+							<h2 style="line-height: 100%;">Startded Research Assistant Job at NMSLab</h2>
+							<ul style="line-height: 150%;">
+								<li>Researched on cloud computing, fog computing and multimedia networking</li>
+								<li>Researched on video encoding and rendering techniques for better streaming latency and user experience</li>
+								<li>Built a 360° video real-time streaming testbed with cloud computing techniques</li>
+							</ul>
+						</div>
+
+
+						<div class="timeline-item" date-is='06-15-2015'>
+							<h2 style="line-height: 100%;">Startded Software Engineer Internship at Lite-On Technologies</h2>
+							<ul style="line-height: 150%;">
+								<li>Designed a stress test tool to validate the function of SSD (solid-state disk) firmware</li>
+								<li>Conducted a working process sending quantified and visualized test reports to users for daily reports</li>
+							</ul>
+						</div>
+
+						<div class="timeline-item" date-is='06-15-2015'>
+							<h2 style="line-height: 100%;">Studied Bachelor's degree at National Tsing-Hua University</h2>
+							<ul style="line-height: 150%;">
+								<li>Overall GPA: 3.25/4.0, Last 60 GPA: 3.71/4.0</li>
+								<li>Projest "VR Robotic Agent for People with Disabilities" nominated for Best Undergraduate Project Award 2017 (one of top 10 undergraduate research projects)</li>
+								<li>Published paper “Edge-Assisted Rendering of 360° Videos Streamed to Head-Mounted Virtual Reality” at IEEE ISM 2018</li>
+							</ul>
+						</div>
+
+						</span>
+					</div>
+
+					<ul class="actions">
+						<li><a onclick="myFunction()" class="button" id="myBtn">Learn More</a></li>
+					</ul>
+				</section>
+
+
+				<script>
+					function myFunction() {
+					  var dots = document.getElementById("dots");
+					  var moreText = document.getElementById("more");
+					  var btnText = document.getElementById("myBtn");
+					
+					  if (dots.style.display === "none") {
+						dots.style.display = "inline";
+						btnText.innerHTML = "Read more"; 
+						moreText.style.display = "none";
+					  } else {
+						dots.style.display = "none";
+						btnText.innerHTML = "Read less"; 
+						moreText.style.display = "inline";
+					  }
+					}
+				</script>
+
+
+
+
+
+
+
+
+
+
 
 				<!-- Two -->
 					<section id="two">
@@ -88,10 +196,6 @@
 							<div class="col-12 col-12-small">
 								<ul class="labeled-icons">
 									<li>
-										<h3 class="icon brands fa-twitter"><span class="label">Twitter</span></h3>
-										<a href="https://twitter.com/yuan64198">https://twitter.com/yuan64198</a>
-									</li>
-									<li>
 										<h3 class="icon brands fa-github"><span class="label">Github</span></h3>
 										<a href="https://github.com/yuan64198">https://github.com/yuan64198</a>
 									</li>
@@ -101,7 +205,11 @@
 									</li>
 									<li>
 										<h3 class="icon fa fa-envelope"><span class="label">Email</span></h3>
-										<a href="yuan64198@gmail.com">yuan64198@gmail.com</a>
+										<a href="mailto:yuan64198@gmail.com">yuan64198@gmail.com</a>
+									</li>
+									<li>
+										<h3 class="icon brands fa-twitter"><span class="label">Twitter</span></h3>
+										<a href="https://twitter.com/yuan64198">https://twitter.com/yuan64198</a>
 									</li>
 								</ul>
 							</div>
